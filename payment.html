@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaizen Fashion</title>
+
+    <!-- all css for icon -->
+    <link rel="stylesheet" href="CSS/all.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+
+    <!--  owl carousel css -->
+    <link rel="stylesheet" href="CSS/owl.carousel.css">
+
+    <!-- owl theme default css -->
+    <link rel="stylesheet" href="CSS/owl.theme.default.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="CSS/animate.min.css">
+
+    <!-- media css -->
+    <link rel="stylesheet" href="CSS/media.css">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg navbar-light lightblue-bg py-2 wow animate__animated animate__fadeInDown">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="image/logo (1).png" alt="Kaizen" width="120">
+            </a>
+
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+                    <li class="nav-item px-1">
+                        <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link text-dark" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link text-dark" href="services.html">Service</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link text-dark" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown px-1">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+                            <li><a class="dropdown-item" href="event.html">Event</a></li>
+                            <li><a class="dropdown-item" href="delievery.html">Delievery</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link text-dark" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="d-flex mb-0 list-unstyled icon">
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping text-dark"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user text-dark"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass text-dark"></i></a></li>
+            </ul>
+
+            <div>
+                <button class="btn me-3 rounded-3 px-3 py-1 bg-white" data-bs-toggle="offcanvas"
+                    href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Login</button>
+                <button class="btn me-3 rounded-3 px-3 py-1">Register</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="offcanvasExampleLabel">Login</h2>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body pb-1">
+            <div class="col-lg-12">
+                <div class="w-100">
+                    <div class="login-form p-3 pt-4">
+                        <form>
+                            <div class="form-head text-center pb-4">
+                                <p>Don't have an account yet?
+                                    <a>Sign up for free</a>
+                                </p>
+                            </div>
+                            <p>
+                                <label class="d-block mb-2">Email</label>
+                                <input type="email" placeholder="Email" class="border-0 py-2 px-3 w-100 rounded-3">
+                            </p>
+                            <p>
+                                <label class="d-block mb-2">Password</label>
+                                <input type="password" placeholder="Password"
+                                    class="border-0 py-2 px-3 w-100 rounded-3">
+                            </p>
+                            <div class="check-box">
+                                <p class="text-end">Forget password?</p>
+                            </div>
+                            <button type="submit" class="darkblue-bg w-100 text-white rounded-3 border-0 py-2 mb-3">
+                                Login
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <span class="justify-content-center d-flex"> ........ or Login with ........ </span>
+                            <ul class="row p-0 list-unstyled mt-3 justify-content-center">
+                                <li class="rounded-circle text-center">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f text-white"></i>
+                                    </a>
+                                </li>
+                                <li class="rounded-circle text-center">
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="padding70">
+        <div class="container">
+            <div class="row">
+                <h2>Select a payment method</h2>
+                <div class="col-lg-8 col-12 order1">
+                    <div class="w-100">
+                        <div class="payment bg-white p-4 my-4">
+                            <h5 class="pb-3 border-bottom">Your available balance</h5>
+                            <div class="d-flex py-3 ms-3">
+                                <h5>+</h5>
+                                <input class="mx-3" type="text" />
+                                <button class="border py-1 px-3 bg-light">Apply</button>
+                            </div>
+                            <h5>Another payment method</h5>
+
+                            <div class="my-3">
+                                <input type="radio" /> Pay with Debit/Credit/ATM Cards
+                                <label class="text-danger ms-3 d-block">You can save your cards as per new RBI
+                                    guidelines</label>
+                                <img src="image/visa.png" alt="" class="ms-3 pt-2">
+                            </div>
+                            <div class="my-3">
+                                <input type="radio" /> Net Banking
+                                <select class="d-block py-1 bg-light border-1 rounded-2 my-2 ms-3">
+                                    <option>Choose an Option</option>
+                                </select>
+                                <img src="image/alert.png" class="ms-3" alt="">
+                                <label class="d-inline">For faster payment and instant refund, please use UPI </label>
+                            </div>
+                            <div class="my-3">
+                                <input type="radio" /> Other UPI Apps
+                                <label class="d-block ms-3">Please enter your UPI ID </label>
+                                <input type="text" class="ms-3" />
+                                <button class="border py-1 px-3 bg-warning rounded-2 ms-3">Verify</button>
+                            </div>
+                            <div class="my-3">
+                                <input type="radio" /> EMI
+                                <select class="d-block py-1 bg-light border-1 rounded-2 my-2 ms-3">
+                                    <option>Choose an EMI</option>
+                                </select>
+                                <label class="d-inline ms-3">Amazon Pay Later option is not available for this order
+                                </label>
+                            </div>
+                            <div class="mt-3 cash bg-yellow p-3 rounded-3">
+                                <input type="radio" checked /> Cash On Delivery / Pay On Delivery
+                                <p class="ms-3">Scan & Pay using Amazon app (₹25 cashback on first transaction). <br />
+                                    Cash, UPI ,Cards also accepted</p>
+                            </div>
+                        </div>
+                        <div class="total payment bg-white p-4 my-4">
+                            <ul class="list-unstyled d-flex mb-0">
+                                <li class="align-self-center me-3"><button
+                                        class="btn bg-warning text-dark border-0">Place Your Order</button></li>
+                                <li class="align-self-center">
+                                    <h4 class="text-danger fw-bold">Order Total : $ 800.00</h4>
+                                    <p class="mb-0">By placing your order, you agree to Amazon's</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>
+                            Need help? Check our help pages or contact us
+                            When your order is placed, we'll send you an e-mail message acknowledging receipt of your
+                            order. If you choose to pay using an electronic payment method (credit card, debit card or
+                            net banking), you will be directed to your bank's website to complete your payment. Your
+                            contract to purchase an item will not be complete until we receive your electronic payment
+                            and dispatch your item. If you choose to pay using Pay on Delivery (POD), you can pay using
+                            cash/card/net banking when you receive your item.
+                            See kyzon.in's Return Policy.
+
+                            Need to add more items to your order? Continue shopping on the Kyzan.in homepage.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 delievery-address order2">
+                    <div class="w-100">
+                        <div class="payment bg-white p-4 my-4">
+                            <h5 class="pb-3 border-bottom">Delivery address</h5>
+                            <p>
+                                Srushti Mendapara <br />
+                                E-502,vedant city <br />
+                                Abrama road <br />
+                                SURAT, GUJARAT 394101 <br />
+                            </p>
+                        </div>
+                        <div class="payment bg-white p-4 my-4">
+                            <button class="btn bg-warning text-dark border-0 w-100">Use this payment method</button>
+                            <p class="mt-2">Choose a payment method to continue checking out. You will still have a
+                                chance to review
+                                and edit your order before it is final.
+                            </p>
+                            <h5 class="pb-3 border-bottom">Order Summary</h5>
+                            <ul class="list-unstyled">
+                                <li class="d-flex">
+                                    <p>Items : </p>
+                                    <p class="text-end">6</p>
+                                </li>
+                                <li class="d-flex">
+                                    <p>Delievery : </p>
+                                    <p class="text-end">--</p>
+                                </li>
+                                <li class="d-flex">
+                                    <p>Total : </p>
+                                    <p class="text-end">$800</p>
+                                </li>
+                            </ul>
+
+                            <h5 class="text-danger pt-3 border-top">
+                                Order Total : $800
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="overflow-hidden">
+        <div class="footer-bg paddingtop pb-3">
+            <div class="container footer">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 col-12 my-2">
+                        <div class="w-100 justify-content-ms-start justify-content-center d-flex">
+                            <div>
+                                <a href="#"><img src="image/logo (1).png" alt="" width="100" class="mb-3"></a>
+                                <p>
+                                    Lorem Ipsum is simply <br />
+                                    dummy text of the <br />
+                                    printing and typesetting <br />
+                                    industry.
+                                </p>
+                                <ul class="list-unstyled mb-0 d-flex">
+                                    <li class="footer-icon text-center me-2">
+                                        <i class="fa-brands fa-instagram text-white"></i>
+                                    </li>
+                                    <li class="footer-icon text-center me-2">
+                                        <i class="fa-brands fa-youtube text-white"></i>
+                                    </li>
+                                    <li class="footer-icon text-center me-2">
+                                        <i class="fa-brands fa-twitter text-white"></i>
+                                    </li>
+                                    <li class="footer-icon text-center me-2">
+                                        <i class="fa-brands fa-facebook-f text-white"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12 my-2">
+                        <div class="w-100 justify-content-ms-start justify-content-center d-flex">
+                            <div>
+                                <h4 class="mb-3">
+                                    Quick Links
+                                </h4>
+                                <ul class="list-unstyled mb-0">
+                                    <li>About</li>
+                                    <li>Blog</li>
+                                    <li>Contact</li>
+                                    <li>FAQ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12 my-2">
+                        <div class="w-100 justify-content-ms-start justify-content-center d-flex">
+                            <div>
+                                <h4 class="mb-3">
+                                    Shopping
+                                </h4>
+                                <ul class="list-unstyled mb-0">
+                                    <li>New Arrivals</li>
+                                    <li>Winter Collection</li>
+                                    <li>All Products</li>
+                                    <li>Popular Categories</li>
+                                    <li>Mackup</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12 my-2">
+                        <div class="w-100 justify-content-ms-start justify-content-center d-flex">
+                            <div>
+                                <h4 class="mb-3">
+                                    Contact Info
+                                </h4>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-flex pb-2">
+                                        <i class="fa-solid fa-house-chimney pe-3 align-self-center"></i>
+                                        <p class="align-self-center mb-0">
+                                            Plaza X , XY Floor, <br />
+                                            XYZ Street, XYZ
+                                        </p>
+                                    </li>
+                                    <li class="d-flex pb-2">
+                                        <i class="fa-solid fa-phone pe-3 align-self-center"></i>
+                                        <p class="align-self-center mb-0">
+                                            +123-456-7890
+                                        </p>
+                                    </li>
+                                    <li class="d-flex pb-2">
+                                        <i class="fa-solid fa-envelope pe-3 align-self-center"></i>
+                                        <p class="align-self-center mb-0">
+                                            +123-456-7890
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-white">
+            <div class="container">
+                <p class="mb-0 py-3">Copyright © 2022 Fashion Geek By Evonicmedia. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/popper.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/owl.carousel.js"></script>
+    <script src="JS/wow.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 400) {
+                $("header").addClass("sticky-header");
+            };
+            if ($(window).scrollTop() >= 80) {
+                $(".back").fadeIn();
+            }
+            else {
+                $(".back").fadeOut();
+            }
+            $(".back").click(function () {
+                $("html,body").animate({ scrollTop: 0 }, 2000);
+            });
+        });
+    </script>
+</body>
+
+</html>
