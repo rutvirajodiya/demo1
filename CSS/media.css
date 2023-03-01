@@ -1,0 +1,51 @@
+@media(max-width:576px) {
+   .heading h2 {
+      font-size: 24px !important;
+   }
+
+   .heading p {
+      font-size: 15px;
+   }
+
+   h1 {
+      font-size: 28px;
+   }
+}
+
+@media(max-width:991px) {
+   .add::after {
+      width: 30%;
+   }
+
+   .add::before {
+      width: 30%;
+   }
+
+   .story::before {
+      width: 60%;
+   }
+
+   .story::after {
+      width: 60%;
+   }
+
+   
+   .order1{
+      order: 2;
+   }
+   .order2{
+      order: 1;
+   }
+
+   .story::before {
+      width: 30%;
+  }
+}
+
+@media (max-width:1000px) {
+   .overflow {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+   }
+}

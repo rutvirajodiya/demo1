@@ -1,0 +1,646 @@
+* {
+    outline: none;
+}
+
+:root {
+    --darkblue: rgb(75, 139, 140);
+    --lightblue: #bae7d8;
+    --textcolor: rgb(255, 227, 255);
+    --white: #fff;
+}
+
+h1,h2,h3 {
+    font-family: 'Ivy Mode';
+}
+
+h4,h5,h6,p {
+    font-family: 'Futura Std';
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.spinner{
+	width: 100px !important;
+	height: 100px !important;
+	border-top: 5px solid var(--darkblue) !important;
+	border-bottom: 5px solid var(--darkblue) !important;
+	border-radius: 50%;
+	animation: spinner 1.5s infinite linear;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+@keyframes spinner{
+	100%{
+		transform: rotate(360deg);
+	}
+} 
+
+.main-class {
+    display: none;
+}
+
+.back {
+    display: none;
+}
+
+.back i {
+    width: 36px;
+    height: 36px;
+    bottom: 8px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    line-height: 36px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.lightblue-bg{
+    background-color: var(--lightblue);
+}
+
+.sticky-header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+    z-index: 9999;
+    background-color: var(--lightblue);
+    backdrop-filter: blur(5px);
+    transition: all 0.10s;
+}
+
+.dropdown-menu[data-bs-popper]{
+    top: 100%;
+    left: 0;
+    margin-top: 0.80rem;
+    border-radius: 0;
+}
+
+.owl-nav{
+    display: none;
+}
+.owl-dots {
+    margin-top: 38px;
+}
+.outwear .owl-dots{
+    margin-bottom: 0;
+}
+
+.owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot span {
+    background: var(--darkblue);
+}
+
+header .icon li {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+header button:first-child{
+    color: var(--darkblue);
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.padding70 {
+    padding: 70px 0;
+}
+
+.paddingbottom {
+    padding-bottom: 50px;
+}
+
+.padding100 {
+    padding: 100px 0;
+}
+
+.paddingtop70 {
+    padding-top: 70px;
+}
+
+.paddingtop {
+    padding-top: 100px;
+}
+
+.banner-background {
+    background-color: var(--lightblue);
+}
+
+.banner-background h3 {
+    font-family: Whisper;
+    font-size: 46px;
+    color: var(--darkblue);
+}
+
+.label {
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background-color: var(--darkblue);
+    font-size: 12px;
+    line-height: 34px;
+    top: 10px;
+    left: 10px;
+}
+
+.cart {
+    position: absolute;
+    z-index: 5;
+    top: 10px;
+    right: 10px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.cart a {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: var(--darkblue);
+    line-height: 35px;
+    text-align: center;
+}
+
+.outwear:hover .cart {
+    opacity: 1;
+}
+
+.outwear img{
+    border-radius: 10px;
+}
+
+.heading p {
+    font-size: 18px;
+}
+
+.heading h6,
+label {
+    color: var(--darkblue);
+    font-weight: 500;
+}
+
+.winter-bg {
+    background: url(../image/winter-sale.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #508070;
+}
+
+.winter .heading {
+    color: var(--lightblue);
+}
+
+.winter p,
+.winter h4 {
+    color: var(--lightblue);
+}
+
+.about h5 {
+    color: var(--darkblue);
+    font-weight: 600;
+}
+
+.about-bg{
+    background: url(../image/about_bg.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading-bg {
+    background: url(../image/OUR-PARTNERs.png);
+    background-repeat: no-repeat;
+}
+
+.video-bg {
+    background: url(../image/videobg.png);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #508070;
+    background-size: cover;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.bg-color {
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+/* max-width */
+.max-w-800px {
+    max-width: 800px;
+}
+
+.max-w-400px {
+    max-width: 400px;
+}
+
+.btn {
+    background-color: var(--darkblue);
+    color: var(--white);
+    border: 1px solid var(--darkblue);
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    background-color: white;
+    color: var(--darkblue);
+}
+
+.about-bg-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../image/s.png");
+}
+
+.about-bg-img h3 {
+    color: var(--darkblue);
+}
+
+.subscribe {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../image/img.png");
+}
+
+.footer-bg {
+    background: url(../image/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: var(--darkblue);
+    line-height: 35px;
+    transition: all 0.7s;
+}
+
+.shoes5{
+    border-radius: 20px;
+}
+
+.footer-icon:hover{
+    background-color: white;
+}
+
+.footer-icon:hover i{
+    color: var(--darkblue) !important;
+}
+
+.footer-icon  i{
+    font-size: 18px;
+}
+
+footer p,
+footer ul li {
+    line-height: 1.6;
+}
+
+footer i {
+    font-size: 21px;
+}
+
+.copyright {
+    background-color: var(--darkblue);
+}
+
+.contact-bg {
+    background: url(../image/contact-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.author{
+    background-color: #dbe8e8;
+}
+
+.author p:first-child{
+    color: var(--darkblue);
+}
+.address li {
+    padding-bottom: 25px;
+}
+
+.text h4 {
+    color: var(--darkblue);
+    font-weight: 600;
+}
+
+.card a{
+    color: var(--darkblue);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.text p {
+    line-height: 24px;
+    color: #4D5765;
+}
+
+.brand{
+    box-shadow: 0 0 5px #929090;
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    font-weight: 700;
+    line-height: 42px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: rgba(75, 139, 140, 0.20);
+}
+
+.about-bg-2 {
+    background: url(../image/about-bg-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.gallery-bg {
+    background: url(../image/gellery-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-bg2{
+    background: url(../image/about-bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.story{
+    color: var(--darkblue);
+}
+
+.story::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 15px;
+    height: 2px;
+    width: 80%;
+    background-color: var(--darkblue);
+}
+
+.add::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 15px;
+    height: 2px;
+    width: 40%;
+    background-color: var(--darkblue);
+}
+
+.add::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 15px;
+    height: 2px;
+    width: 40%;
+    background-color: var(--darkblue);
+}
+
+.shipping::before{
+    width: 75%;
+}
+
+.service-line::before {
+    width: 70%;
+}
+
+
+.login-bg{
+    background-image: url(../image/login-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-head p{
+    color: #4D5765;
+}
+
+.form-head a{
+    color: var(--darkblue) !important;
+}
+
+.login-form label{
+    font-size: 14px;
+    font-weight: 600;
+    color: #0F1216;
+}
+
+.login-form p input{
+    background-color: #F2F4F9;
+}
+
+.check-box{
+    font-size: 14px;
+}
+
+.login-form button{
+    font-weight: 600;
+}
+
+.login-form span{
+    font-size: 14px;
+    color: #7a797f;
+    font-weight: 500;
+}
+
+.login-form ul li{
+    width: 44px;
+    height: 44px;
+    background-color: var(--darkblue);
+    line-height: 44px;
+}
+
+.login-form ul li:last-child{
+    border: 2px solid #E8ECF0;
+    font-size: 16px;
+    background-color: transparent;
+    transition: all 0.5s;
+}
+
+.login-form ul li:last-child a{
+    color: #9EA9B6;
+}
+
+.login-form ul li:last-child:hover{
+    background-color: var(--darkblue);
+    border: none;
+}
+
+.login-form ul li:last-child:hover i{
+    color: white;
+}
+
+.about-bg {
+    background: url(../image/about-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.history h5 {
+    font-size: 18px;
+}
+
+.history label {
+    font-size: 14px;
+}
+
+.history ul {
+    border-bottom: 2px solid var(--darkblue);
+}
+
+.team-bg {
+    background: url(../image/story-bg1.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.categories-bg {
+    background: url(../image/categories-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.filter {
+    box-shadow: 2px 2px 3px 3px #d2cece;
+}
+
+.filter h4 {
+    border-bottom: 1px solid;
+    color: var(--darkblue);
+}
+
+.filtering label {
+    color: var(--darkblue);
+    font-weight: 500;
+}
+
+.filtering h6{
+    padding-top: 10px;
+}
+
+.new {
+    top: 20px;
+    transform: rotate(-90deg) translateX(-100%);
+    transform-origin: top left;
+}
+
+.team-bg-1 {
+    background: url(../image/team-bg1.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+.team-bg-2 {
+    background: url(../image/team-bg2.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.other-branch h2 {
+    color: var(--darkblue);
+}
+
+.darkblue-bg {
+    background-color: var(--darkblue);
+}
+
+.darkblue-bg button {
+    color: var(--darkblue);
+}
+
+fieldset legend {
+    color: var(--darkblue);
+    font-weight: 500;
+}
+
+.event-bg {
+    background: url(../image/event-bg.png);
+    background-repeat: no-repeat;
+}
+
+.delievery-bg {
+    background: url(../image/delievery-bg.png);
+    background-repeat: no-repeat;
+}
+
+.payment {
+    box-shadow: 0px 0px 3px 0px #888888;
+    border-radius: 7px;
+}
+
+.payment h5 {
+    font-weight: 600;
+}
+
+.payment label {
+    color: rgb(94, 91, 91);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.bg-yellow {
+    background-color: #fce5cd;
+    border-color: #f9ad81;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.service-bg {
+    background: url(../image/service-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.service-search input {
+    box-shadow: 0 0 5px #929090;
+}
+
+.service-search i {
+    left: 10px;
+    top: 28%;
+}
+.delete{
+    box-shadow: 0 0 5px #929090;
+}
+
+.delete a{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    box-shadow: 0 0 5px #929090;
+    line-height: 35px;
+}
