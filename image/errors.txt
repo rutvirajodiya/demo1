@@ -1,0 +1,5 @@
+[12/23/2022, 10:52:40 PM] layer " ,Lorem Ipsum is simply dummy text of the printing and typesett": Expected Either a default asset specification or a layer asset specification but " " found.
+[12/23/2022, 10:52:40 PM] layer " ,Lorem Ipsum is simply dummy text of the printing and typesett": Expected Either a default asset specification or a layer asset specification but " " found.
+[12/23/2022, 10:52:40 PM] layer " ,Lorem Ipsum is simply dummy text of the printing and typesett": Expected Either a default asset specification or a layer asset specification but " " found.
+[12/23/2022, 10:52:40 PM] layer "+123-456-7890": Expected Either a default asset specification or a layer asset specification but "+" found.
+[12/23/2022, 10:52:40 PM] layer "xyz@email.com": Unsupported extension: com
